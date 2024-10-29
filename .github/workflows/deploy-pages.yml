@@ -35,7 +35,7 @@ jobs:
 
     - name: Build .env file
       run: |
-        echo "VITE_BANG_SERVER_URL=${{ vars.BANG_SERVER_URL }}" >> .env
+        echo "VITE_BANG_SERVER_URL=wss://bangserver.salvoserver.it/" >> .env
         echo "VITE_DISCORD_LINK=${{ vars.DISCORD_LINK }}" >> .env
         echo "VITE_PAYPAL_DONATE_LINK=${{ vars.PAYPAL_DONATE_LINK }}" >> .env
 
